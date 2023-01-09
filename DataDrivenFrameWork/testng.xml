@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="DataDrivenTest">
+	  <parameter name="Email" value="vengi@gmail.com"></parameter>
+	  <parameter name="Password" value="vengi"></parameter>
+    <classes>
+      <class name="com.lao.datadriven.BothncorrectIncorrect"/>
+         </classes>
+  </test> <!-- DataDrivenTest -->
+  <test name="Datadriver1">
+	 <parameter name="Email" value="vengi@gmail.com"></parameter>
+	  <parameter name="Password" value="Moorthi@1001"></parameter>
+	  <classes>
+		<class name="com.lao.datadriven.CorrectPassword"/>  	  
+	  </classes>
+  </test>  
+  <test name="DataDriven2">
+	  <parameter name="Email" value="ervengatesh1@gmail.com"></parameter>
+	  <parameter name="Password" value="Moorthi@1001"></parameter>
+	  <classes>
+		<class name="com.lao.datadriven.BothCorrect"/>
+	  </classes>
+  </test>
+  <test name="Datadriven3">
+	  <parameter name="Email" value="ervengatesh1@gmail.com"></parameter>
+	  <parameter name="Password" value="vengu"></parameter>
+	  <classes>
+		  <class name="com.lao.datadriven.CorrectUsername"/>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->

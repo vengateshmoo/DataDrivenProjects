@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DataDrivenTest(failed)">
+    <parameter name="Email" value="vengi@gmail.com"/>
+    <parameter name="Password" value="vengi"/>
+    <classes>
+      <class name="com.lao.datadriven.BothncorrectIncorrect">
+        <methods>
+          <include name="bothCorrect"/>
+        </methods>
+      </class> <!-- com.lao.datadriven.BothncorrectIncorrect -->
+    </classes>
+  </test> <!-- DataDrivenTest(failed) -->
+  <test thread-count="5" name="Datadriver1(failed)">
+    <parameter name="Email" value="vengi@gmail.com"/>
+    <parameter name="Password" value="Moorthi@1001"/>
+    <classes>
+      <class name="com.lao.datadriven.CorrectPassword">
+        <methods>
+          <include name="correctPassword"/>
+        </methods>
+      </class> <!-- com.lao.datadriven.CorrectPassword -->
+    </classes>
+  </test> <!-- Datadriver1(failed) -->
+  <test thread-count="5" name="DataDriven2(failed)">
+    <parameter name="Email" value="ervengatesh1@gmail.com"/>
+    <parameter name="Password" value="Moorthi@1001"/>
+    <classes>
+      <class name="com.lao.datadriven.BothCorrect">
+        <methods>
+          <include name="bothCorrect"/>
+        </methods>
+      </class> <!-- com.lao.datadriven.BothCorrect -->
+    </classes>
+  </test> <!-- DataDriven2(failed) -->
+  <test thread-count="5" name="Datadriven3(failed)">
+    <parameter name="Email" value="ervengatesh1@gmail.com"/>
+    <parameter name="Password" value="vengu"/>
+    <classes>
+      <class name="com.lao.datadriven.CorrectUsername">
+        <methods>
+          <include name="correctUsername"/>
+        </methods>
+      </class> <!-- com.lao.datadriven.CorrectUsername -->
+    </classes>
+  </test> <!-- Datadriven3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
