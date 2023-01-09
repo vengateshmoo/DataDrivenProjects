@@ -18,7 +18,7 @@ public class BothCorrect {
 		WebElement login= driver.findElement(By.linkText("Log in"));
 		login.click();
 		
-		WebElement username= driver.findElement(By.id("Email"));
+		WebElement username= driver.findElement(By.id("email"));
 		username.sendKeys(uname);
 
 		WebElement password=	driver.findElement(By.id("Password"));
